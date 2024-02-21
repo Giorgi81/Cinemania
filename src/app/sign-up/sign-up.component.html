@@ -1,0 +1,23 @@
+<p style="color: transparent;"></p>
+<form class="form-field">
+    
+    <div class="pop-up" [ngStyle]="{'display' : popUpFlexibility}">
+        <h1>ანგარიში წარმატებით შეიქმნა!</h1>
+    </div>
+    <h1 id="logo">Cinemania</h1>
+    <div class="logo-box">
+        <h1>ანგარიშის შექმნა</h1>
+    </div>
+    <mat-form-field>
+         <mat-label>მომხმარებლის სახელი</mat-label>
+         <input type="text" matInput [(ngModel)]="user.username" name="username" required minlength="5" >
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>პაროლი</mat-label>
+            <input type="password" matInput [(ngModel)]="user.password" name="password" required minlength="8" >
+        </mat-form-field>
+
+        <small class="errorMessage">{{errorMessage}}</small>
+        <button mat-raised-button color="primary" (click)="logIn()"> ანგარიშის შექმნა</button>
+    </form>

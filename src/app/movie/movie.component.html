@@ -1,0 +1,36 @@
+<div id="container">
+    <div class="header">
+        <h1 id="logo">Cinemania</h1>
+        <button mat-icon-button color="warn" class="bucks-btn">C</button>
+        <p class="dollar">0$</p>
+        <button mat-raised-button color="warn" class="premium-btn">პრემიუმის ყიდვა</button>
+        <button mat-raised-button (click)="goToLogin()" color="primary" class="logOut-btn">გასვლა</button>
+    </div>
+    
+    <div id="main">
+        <a [href]="movie.trailer"><img [src]="movie.cover" [alt]="movie.name" width="250"></a>
+        <h1>{{movie.name}}</h1>
+        <div class="date">
+            <small>გამოშვების წელი :</small>
+            <small>{{movie.date}}</small>
+        </div>
+        <div class="imdb-div">
+            <small>IMDB:</small>
+            <small>{{movie.imdb}}</small>
+         </div>
+        <div class="desc">
+            <small>მოკლე აღწერა:</small>
+            <br>
+            <small>{{movie.description}}</small>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</div>

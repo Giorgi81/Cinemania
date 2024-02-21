@@ -1,0 +1,50 @@
+<div class="header">
+  <h1 id="logo">Cinemania</h1>
+  <button mat-icon-button color="warn" class="bucks-btn">C</button>
+  <p class="dollar">0$</p>
+  <button mat-raised-button color="warn" class="premium-btn">პრემიუმის ყიდვა</button>
+  <button mat-raised-button (click)="goToLogin()" color="primary" class="logOut-btn">გასვლა</button>
+</div>
+<mat-card class="popular-card">
+  <mat-card-content><button mat-raised-button color="accent">პოპულარული ფილმები</button></mat-card-content>
+</mat-card>
+<div class="movies-box">
+  <div *ngFor="let movie of popularMovies" class="movie">
+    <img [src]="movie.cover" width="200" (click)="goToMovie('popular', movie.id)">
+  </div>
+</div>
+<div class="ad-main-box">
+  <div class="ad-div">
+    <h1>განათავსე შენი რეკლამა</h1>
+    <button mat-raised-button color="primary">განათავსე რეკლამა</button>
+  </div>
+</div>
+<mat-card>
+  <mat-card-content>
+    <button mat-raised-button color="accent">ტრენდული ფილმები</button></mat-card-content>
+</mat-card>
+<div class="movies-box">
+  <div *ngFor="let movie of trendingMovies" class="movie">
+    <img [src]="movie.cover" width="200" (click)="goToMovie('Trending', movie.id)">
+  </div>
+</div>
+<div class="ad-main-box">
+  <div class="ad-div">
+    <h1>განათავსე შენი რეკლამა</h1>
+    <button mat-raised-button color="primary">განათავსე რეკლამა</button>
+  </div>
+</div>
+<mat-card>
+  <mat-card-content>
+    <button mat-raised-button color="accent">კომედიური ფილმები</button></mat-card-content>
+</mat-card>
+<div class="movies-box">
+  <div *ngFor="let movie of comedyMovies" class="movie">
+    <img [src]="movie.cover" [width]="200" (click)="goToMovie('comedy', movie.id)">
+  </div>
+</div>
+
+<a href="/src/assets/data/trending-movies.json"></a>
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,25 @@
+<p style="color: transparent;">w</p>
+
+<form class="form-field" >
+    <h1 id="logo">Cinemania</h1>
+    <div class="logo-box">
+        <h1>შესვლა</h1>
+    </div>
+    <mat-form-field>
+        <mat-label>მომხმარებლის სახელი</mat-label>
+        <input type="text" matInput [(ngModel)]="username" name="username" required minlength="5" ngModel #user="ngModel">
+    </mat-form-field>
+    <small *ngIf="user.touched && !user.valid" class="error">მომხმარებლის სახელი უნდა აღემატებოდეს 5 სიმბოლოს</small>    
+
+    <mat-form-field>
+        <mat-label>პაროლი</mat-label>
+        <input type="password" matInput [(ngModel)]="password" name="password" required minlength="8" ngModel #pass="ngModel">
+    </mat-form-field>
+    <small *ngIf="pass.touched && !pass.valid" class="error">პაროლი უნდა აღემატებოდეს 8 სიმბოლოს</small>    
+
+    <small class="errorMessage">{{errorMessage}}</small>
+    <button mat-raised-button color="primary" (click)="logIn()"> შესვლა</button>
+<button class="createAccount" (click)="signUp()" mat-raised-button color="primary">ანგარიშის შექმნა</button>
+</form>
+
+

@@ -1,0 +1,1985 @@
+.movies-box {
+    display: flex;
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .movie {
+        padding: 20px;
+
+        img {
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 1s;
+            width: 200px;
+        
+
+
+            &:hover {
+                width: 210px;
+                transition: 1s;
+                border: 2px solid white;
+            }
+        }
+
+    }
+
+
+}
+
+.popular-card {
+    margin-top: 100px;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+
+    top: 0;
+    z-index: 1;
+    margin-bottom: 40px;
+
+    .premium-btn {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        right: 25%;
+
+
+    }
+
+    .bucks-btn {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        right: 20%;
+        background-color: #ff4081;
+        color: white;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+    .dollar {
+        right: 19%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        position: absolute;
+        user-select: none;
+
+
+
+
+
+    }
+
+
+
+    .logOut-btn {
+        position: absolute;
+        top: 50%;
+        right: 50px;
+
+        transform: translate(-50%, -50%);
+    }
+
+
+}
+
+
+.popular-title {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+mat-card {
+    margin-top: 30px;
+
+    margin-left: 20px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+  
+   
+   
+}
+
+
+.popular-box {
+    display: flex;
+}
+
+
+#logo {
+    font-family: 'Satisfy', cursive;
+    font-family: 'Titillium Web', sans-serif;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translate(-50%, -50%);
+    color: black;
+
+}
+
+
+.ad-main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .ad-div {
+        width: 70%;
+        height: 100px;
+        margin-right: 50px;
+        background-color: transparent;
+        border: 5px solid white;
+        border-radius: 15px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        user-select: none;
+
+
+        h1 {
+            color: white;
+            font-weight: bolder;
+        }
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 3000px) {
+    img {
+        width: 300px;
+    }
+    
+
+    .ad-main-box {
+      
+    
+        .ad-div {
+            width: 40%;
+            height: 150px;
+
+            h1 {
+                font-size: 30px;
+            }
+
+            button {
+                width: 300px;
+                height: 80px;
+                font-size: 23px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 270px;
+            height: 70px;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+    }
+
+}
+
+
+
+@media only screen and (max-width: 2000px) {
+    img {
+        width: 250px;
+    }
+    
+
+    .ad-main-box {
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 130px;
+
+            h1 {
+                font-size: 27px;
+            }
+
+            button {
+                width: 280px;
+                height: 70px;
+                font-size: 21px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 250px;
+            height: 60px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 1750px) {
+
+    .movie {
+        img {
+            width: 230px;
+        }
+
+    }
+   
+    
+
+    .ad-main-box {
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 110px;
+
+            h1 {
+                font-size: 25px;
+            }
+
+            button {
+                width: 250px;
+                height: 60px;
+                font-size: 19px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 230px;
+            height: 60px;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 1600px) {
+    img {
+        width: 210px;
+    }
+    
+
+    .ad-main-box {
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 100px;
+
+            h1 {
+                font-size: 23px;
+            }
+
+            button {
+                width: 230px;
+                height: 60px;
+                font-size: 17px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 230px;
+            height: 50px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 1500px) {
+    img {
+        width: 200px;
+    }
+    
+
+    .ad-main-box {
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 100px;
+
+            h1 {
+                font-size: 23px;
+            }
+
+            button {
+                width: 230px;
+                height: 60px;
+                font-size: 17px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 230px;
+            height: 50px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 1450px) {
+
+    .movies-box {
+
+        .movie {
+            padding: 15px;
+            img {
+                width: 200px;
+            }
+    
+        }
+
+    }
+  
+    
+    
+
+    .ad-main-box {
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 100px;
+
+            h1 {
+                font-size: 23px;
+            }
+
+            button {
+                width: 230px;
+                height: 60px;
+                font-size: 17px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 230px;
+            height: 50px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 1400px) {
+
+    .movies-box {
+
+        .movie {
+            padding: 15px;
+            img {
+                width: 180px;
+            }
+    
+        }
+
+    }
+  
+    
+    
+
+    .ad-main-box {
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 100px;
+
+            h1 {
+                font-size: 23px;
+            }
+
+            button {
+                width: 230px;
+                height: 60px;
+                font-size: 17px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 230px;
+            height: 50px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .movies-box {
+
+        .movie {
+            padding: 12px;
+            img {
+                width: 175px;
+            }
+    
+        }
+
+    }
+  
+    
+    
+
+    .ad-main-box {
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 100px;
+
+            h1 {
+                font-size: 20px;
+            }
+
+            button {
+                width: 230px;
+                height: 50px;
+                font-size: 15px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 230px;
+            height: 50px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .movies-box {
+
+        .movie {
+            padding: 12px;
+            img {
+                width: 165px;
+            }
+    
+        }
+
+    }
+  
+    
+    
+
+    .ad-main-box {
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 80px;
+           
+
+            h1 {
+                font-size: 18px;
+            }
+
+            button {
+                width: 230px;
+                height: 50px;
+                font-size: 15px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 230px;
+            height: 50px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 1150px) {
+
+    .movies-box {
+
+        .movie {
+            padding: 12px;
+            img {
+                width: 150px;
+            }
+    
+        }
+
+    }
+  
+    
+    
+
+    .ad-main-box {
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 60px;
+           
+
+            h1 {
+                font-size: 18px;
+            }
+
+            button {
+                width: 200px;
+                height: 30px;
+                font-size: 13px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 230px;
+            height: 40px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .movies-box {
+
+        .movie {
+            padding: 12px;
+            img {
+                width: 130px;
+            }
+    
+        }
+
+    }
+  
+    
+    
+
+    .ad-main-box {
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 60px;
+           
+
+            h1 {
+                font-size: 18px;
+            }
+
+            button {
+                width: 200px;
+                height: 30px;
+                font-size: 13px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 230px;
+            height: 40px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .movies-box {
+
+        .movie {
+            padding: 10px;
+            img {
+                width: 120px;
+            }
+    
+        }
+
+    }
+  
+    
+    
+
+    .ad-main-box {
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 60px;
+           
+
+            h1 {
+                font-size: 18px;
+            }
+
+            button {
+                width: 200px;
+                height: 30px;
+                font-size: 13px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 230px;
+            height: 40px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+
+    .movies-box {
+
+        .movie {
+            padding: 10px;
+            img {
+                width: 110px;
+            }
+    
+        }
+
+    }
+  
+    
+    
+
+    .ad-main-box {
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 50px;
+           
+
+            h1 {
+                font-size: 15px;
+            }
+
+            button {
+                width: 200px;
+                height: 25px;
+                font-size: 13px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 230px;
+            height: 40px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 750px) {
+
+    .movies-box {
+
+        .movie {
+            padding: 10px;
+            img {
+                width: 90px;
+            }
+    
+        }
+
+    }
+  
+    
+    
+
+    .ad-main-box {
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 50px;
+           
+
+            h1 {
+                font-size: 15px;
+            }
+
+            button {
+                width: 200px;
+                height: 25px;
+                font-size: 13px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 230px;
+            height: 30px;
+            border-radius: 8px;
+            font-size: 12px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    .movies-box {
+
+        .movie {
+            padding: 8px;
+            img {
+                width: 80px;
+            }
+    
+        }
+
+    }
+  
+    
+    
+
+    .ad-main-box {
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 50px;
+            border: 2px solid white;
+           
+
+            h1 {
+                font-size: 12px;
+            }
+
+            button {
+                width: 180px;
+                height: 20px;
+                font-size: 10px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 200px;
+            height: 20px;
+            border-radius: 8px;
+            font-size: 10px;
+        }
+    }
+
+
+    .header {
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        position: fixed;
+    
+        top: 0;
+        z-index: 1;
+        margin-bottom: 40px;
+    
+        .premium-btn {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            right: 25%;
+            width: 150px;
+            height: 30px;
+            font-size: 12px;
+    
+    
+        }
+    
+        .bucks-btn {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            right: 25%;
+            background-color: #ff4081;
+            color: white;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+    
+    
+    
+        }
+    
+        .dollar {
+            right: 23%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            position: absolute;
+            user-select: none;
+            font-size: 10px;
+    
+    
+    
+    
+    
+        }
+    
+    
+    
+        .logOut-btn {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            width: 70px;
+            height: 30px;
+            font-size: 12px;
+    
+            transform: translate(-50%, -50%);
+        }
+    
+    
+    }
+
+}
+
+
+@media only screen and (max-width: 550px) {
+
+    .movies-box {
+
+        .movie {
+            padding: 5px;
+            img {
+                width: 60px;
+            }
+    
+        }
+
+    }
+  
+    
+    
+
+    .ad-main-box {
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 30px;
+            border: 2px solid white;
+           
+
+            h1 {
+                font-size: 10px;
+            }
+
+            button {
+                width: 130px;
+                height: 15px;
+                font-size: 8px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 200px;
+            height: 20px;
+            border-radius: 8px;
+            font-size: 10px;
+        }
+    }
+
+
+    .header {
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        position: fixed;
+    
+        top: 0;
+        z-index: 1;
+        margin-bottom: 40px;
+    
+        .premium-btn {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            right: 25%;
+            width: 150px;
+            height: 30px;
+            font-size: 12px;
+    
+    
+        }
+    
+        .bucks-btn {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            right: 25%;
+            background-color: #ff4081;
+            color: white;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+    
+    
+    
+        }
+    
+        .dollar {
+            right: 23%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            position: absolute;
+            user-select: none;
+            font-size: 10px;
+    
+    
+    
+    
+    
+        }
+    
+    
+    
+        .logOut-btn {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            width: 70px;
+            height: 30px;
+            font-size: 12px;
+    
+            transform: translate(-50%, -50%);
+        }
+    
+    
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .movies-box {
+
+        .movie {
+            padding: 5px;
+            img {
+                width: 60px;
+            }
+    
+        }
+
+    }
+  
+    
+    
+
+    .ad-main-box {
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 30px;
+            border: 2px solid white;
+           
+
+            h1 {
+                font-size: 10px;
+            }
+
+            button {
+                width: 130px;
+                height: 15px;
+                font-size: 8px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 200px;
+            height: 20px;
+            border-radius: 8px;
+            font-size: 10px;
+        }
+    }
+
+
+    .header {
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        position: fixed;
+    
+        top: 0;
+        z-index: 1;
+        margin-bottom: 40px;
+    
+        .premium-btn {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            right: 25%;
+            width: 130px;
+            height: 25px;
+            font-size: 10px;
+    
+    
+        }
+    
+        .bucks-btn {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            right: 25%;
+            background-color: #ff4081;
+            color: white;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+    
+    
+    
+        }
+    
+        .dollar {
+            right: 23%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            position: absolute;
+            user-select: none;
+            font-size: 10px;
+    
+    
+    
+    
+    
+        }
+    
+    
+    
+        .logOut-btn {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 60px;
+            height: 25px;
+            font-size: 10px;
+    
+            transform: translate(-50%, -50%);
+        }
+    
+    
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+
+
+    .movies-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+        .movie {
+            padding: 20px;
+
+            img {
+                width: 300px;
+            }
+    
+        }
+
+    }
+  
+    
+    
+
+    .ad-main-box {
+        display: none;
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 30px;
+            border: 2px solid white;
+           
+
+            h1 {
+                font-size: 10px;
+            }
+
+            button {
+                width: 130px;
+                height: 15px;
+                font-size: 8px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 250px;
+            height: 50px;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+    }
+
+
+    .header {
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        position: fixed;
+    
+        top: 0;
+        z-index: 1;
+        margin-bottom: 40px;
+
+        #logo {
+            font-size: 20px;
+        }
+    
+        .premium-btn {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            right: 25%;
+            width: 130px;
+            height: 25px;
+            font-size: 10px;
+    
+    
+        }
+    
+        .bucks-btn {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            right: 25%;
+            background-color: #ff4081;
+            color: white;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+    
+    
+    
+        }
+    
+        .dollar {
+            right: 23%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            position: absolute;
+            user-select: none;
+            font-size: 10px;
+    
+    
+    
+    
+    
+        }
+    
+    
+    
+        .logOut-btn {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 60px;
+            height: 25px;
+            font-size: 10px;
+    
+            transform: translate(-50%, -50%);
+        }
+    
+    
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+
+
+    .movies-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+        .movie {
+            padding: 20px;
+
+            img {
+                width: 300px;
+            }
+    
+        }
+
+    }
+  
+    
+    
+
+    .ad-main-box {
+        display: none;
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 30px;
+            border: 2px solid white;
+           
+
+            h1 {
+                font-size: 10px;
+            }
+
+            button {
+                width: 130px;
+                height: 15px;
+                font-size: 8px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 250px;
+            height: 50px;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+    }
+
+
+    .header {
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        position: fixed;
+    
+        top: 0;
+        z-index: 1;
+        margin-bottom: 40px;
+    
+        .premium-btn {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            right: 25%;
+            width: 100px;
+            height: 20px;
+            font-size: 6px;
+    
+    
+        }
+    
+        .bucks-btn {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            right: 25%;
+            background-color: #ff4081;
+            color: white;
+            width: 5px;
+            height: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+    
+    
+    
+        }
+    
+        .dollar {
+            right: 23%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            position: absolute;
+            user-select: none;
+            font-size: 8px;
+    
+    
+    
+    
+    
+        }
+    
+    
+    
+        .logOut-btn {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 40px;
+            height: 20px;
+            font-size: 7px;
+    
+            transform: translate(-50%, -50%);
+        }
+    
+    
+    }
+}
+
+
+
+@media only screen and (max-width: 400px) {
+
+
+    .movies-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+        .movie {
+            padding: 20px;
+
+            img {
+                width: 300px;
+            }
+    
+        }
+
+    }
+  
+    
+    
+
+    .ad-main-box {
+        display: none;
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 30px;
+            border: 2px solid white;
+           
+
+            h1 {
+                font-size: 10px;
+            }
+
+            button {
+                width: 130px;
+                height: 15px;
+                font-size: 8px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 250px;
+            height: 50px;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+    }
+
+
+    .header {
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        position: fixed;
+    
+        top: 0;
+        z-index: 1;
+        margin-bottom: 40px;
+
+        #logo {
+            left: 50px;
+        }
+    
+        .premium-btn {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            right: 25%;
+            width: 100px;
+            height: 20px;
+            font-size: 6px;
+    
+    
+        }
+    
+        .bucks-btn {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            right: 25%;
+            background-color: #ff4081;
+            color: white;
+            width: 5px;
+            height: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+    
+    
+    
+        }
+    
+        .dollar {
+            right: 23%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            position: absolute;
+            user-select: none;
+            font-size: 8px;
+    
+    
+    
+    
+    
+        }
+    
+    
+    
+        .logOut-btn {
+            position: absolute;
+            top: 50%;
+            right: -25px;
+            width: 15px;
+            height: 20px;
+            font-size: 6px;
+    
+            transform: translate(-50%, -50%);
+            
+        }
+    
+    
+    }
+}
+
+
+@media only screen and (max-width: 300px) {
+
+
+    .movies-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+        .movie {
+            padding: 20px;
+
+            img {
+                width: 250px;
+            }
+    
+        }
+
+    }
+  
+    
+    
+
+    .ad-main-box {
+        display: none;
+      
+    
+        .ad-div {
+            width: 70%;
+            height: 30px;
+            border: 2px solid white;
+           
+
+            h1 {
+                font-size: 10px;
+            }
+
+            button {
+                width: 130px;
+                height: 15px;
+                font-size: 8px;
+                border-radius: 8px;
+            }
+     
+    
+    
+            
+        }
+    
+    }
+
+    mat-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 250px;
+            height: 50px;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+    }
+
+
+    .header {
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        position: fixed;
+    
+        top: 0;
+        z-index: 1;
+        margin-bottom: 40px;
+
+        #logo {
+            left: 40px;
+            font-size: 15px;
+        }
+    
+        .premium-btn {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            right: 25%;
+            width: 85px;
+            height: 15px;
+            font-size: 5px;
+    
+    
+        }
+    
+        .bucks-btn {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            right: 25%;
+            background-color: #ff4081;
+            color: white;
+            width: 5px;
+            height: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 7px;
+    
+    
+    
+        }
+    
+        .dollar {
+            right: 23%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            position: absolute;
+            user-select: none;
+            font-size: 8px;
+    
+    
+    
+    
+    
+        }
+    
+    
+    
+        .logOut-btn {
+            position: absolute;
+            top: 50%;
+            right: -25px;
+            width: 10px;
+            height: 15px;
+            font-size: 5px;
+    
+            transform: translate(-50%, -50%);
+            
+        }
+    
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
